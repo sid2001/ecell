@@ -1,0 +1,230 @@
+body{
+  background-image: url('/src/assets/background.avif');
+  overflow-x: hidden;
+  position:absolute;
+  /* justify-content: center; */
+  margin: 0;
+  /* justify-content: left; */
+  padding: 0;
+  width: 100vw;
+}
+#root{
+  position: relative;
+  display: grid;
+  min-width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.report-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  
+  /* border: solid white 1px; */
+}
+.container-wrapper{
+  box-shadow: 0px -25px 20px -20px rgba(214, 208, 208, 0.45), 25px 0 20px -20px rgba(205, 202, 202, 0.45), 0px 25px 20px -20px rgba(173, 165, 165, 0.45), -25px 0 20px -20px rgba(214, 205, 205, 0.45);
+  position: relative;
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-self: center;
+  border-radius: 20px;
+  background: linear-gradient(rgb(14, 33, 4),rgb(1, 21, 9));
+  min-width: 1000px ;
+  overflow: hidden;
+}
+.image-container img{
+  height: 200px;
+  object-fit: contain;
+}
+.image-container{
+  height:50%;
+  object-fit: contain;
+}
+#plantImage{
+  position: relative;
+  left: 17%;
+  /* height: 400px; */
+  /* width: 600px;   */
+  object-fit: contain;
+  /* justify-self: center; */
+}
+#plantImage2{
+  height: 300px;
+}
+.report-card .heading{
+  background: rgba(231, 198, 109, 0.678);
+  margin: 0;
+  height: 50px;
+  padding: 5px;
+}
+.info-wrapper{
+  border: solid white 1px;
+  /* position:absolute; */
+  box-shadow: 0px -25px 20px -20px rgba(214, 208, 208, 0.45), 25px 0 20px -20px rgba(205, 202, 202, 0.45), 0px 25px 20px -20px rgba(173, 165, 165, 0.45), -25px 0 20px -20px rgba(214, 205, 205, 0.45);
+  display: flex;
+  height: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+  border-right: none;
+  border-radius: 20px;
+}
+.left-card, .right-card{
+  /* border: white solid 1px; */
+  text-align: left;
+  min-width: 50%;
+}
+
+.left-card span, .right-card span{
+  margin: 5px;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.661);
+  border-radius: 10px;
+  height: 45px;
+  padding-left: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.left-card p strong, .right-card p strong{
+  margin-left:8px ;
+}
+canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.report-card{
+  position: relative;
+  width: 60%;
+}
+.video-wrapper{
+  width: 40%;
+  object-fit: cover;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  /* border-top-left-radius: 0px ; */
+}
+.cricle{
+  position: absolute;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+}
+.ring{
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border: solid white 1px;
+  border-radius: 50%;
+  justify-content: center;
+}
+.capture-button{
+  background: none;
+  padding-left:45% ;
+}
+/* .capture-button{
+
+} */
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.input-wrapper input{
+  padding-left: 35%;
+}
+
+.loader{
+  position: absolute;
+  margin-top:20% ;
+  margin-left: 43%;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.313);
+  border-radius: 20px;
+}
+#map{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  z-index: 2;
+  left: 25%;
+}
+.mapOverlay{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(52, 46, 46, 0.696);
+}
+.close-button{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.nav-bar{
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  justify-content: right;
+  background-color: rgba(159, 197, 230, 0.421);
+  box-shadow: 0px 1px 5px 8px rgba(159, 197, 230, 0.421)
+}
+.nav-bar ul{
+  list-style-type: none;
+  display: flex;
+}
+.nav-bar li{
+  display: inline;  
+}
+.nav-bar a,.nav-bar a:hover{
+  color:white;
+  padding: 20px;
+  transition-duration: 0.3s;
+}
+.nav-bar a:hover{
+  cursor: pointer;
+  color: black;
+  /* box-shadow: 0px 1px 5px 8px rgba(159, 197, 230, 0.421) */
+}
+#about-us{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: blue
+
+}
+#home, #contact-us, #pricing{
+  position:relative;
+  height: 100vh;
+  width: 100vw;
+}
+#home{
+  background-color: rgb(193, 68, 68);
+}
+#contact-us{
+  background-color: rgb(64, 221, 55);
+}
+
+.nav-bar .active{
+  border-bottom: 1px white solid; 
+}
